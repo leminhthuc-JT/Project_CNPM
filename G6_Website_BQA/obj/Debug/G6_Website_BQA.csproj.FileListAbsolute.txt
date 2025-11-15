@@ -70,3 +70,7 @@ D:\CNPM\G6_Website_BQA\G6_Website_BQA\obj\Debug\G6_Website_BQA.csproj.CoreCompil
 D:\CNPM\G6_Website_BQA\G6_Website_BQA\obj\Debug\G6_Websi.D5CB134C.Up2Date
 D:\CNPM\G6_Website_BQA\G6_Website_BQA\obj\Debug\G6_Website_BQA.dll
 D:\CNPM\G6_Website_BQA\G6_Website_BQA\obj\Debug\G6_Website_BQA.pdb
+D:\CNPM\G6_Website_BQA\G6_Website_BQA\bin\EntityFramework.dll
+D:\CNPM\G6_Website_BQA\G6_Website_BQA\bin\EntityFramework.SqlServer.dll
+D:\CNPM\G6_Website_BQA\G6_Website_BQA\bin\EntityFramework.xml
+D:\CNPM\G6_Website_BQA\G6_Website_BQA\bin\EntityFramework.SqlServer.xml

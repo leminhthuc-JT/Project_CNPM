@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cd1d7a10171945a988c00eeb2757b5d3" Name="Diagram1">
+        <EntityTypeShape EntityType="QL_BANHANGModel.ANHSANPHAM" Width="1.5" PointX="8.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.ANHSUKIEN" Width="1.5" PointX="3" PointY="17.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.CHITIETHD" Width="1.5" PointX="11.25" PointY="8" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.CHITIETSP" Width="1.5" PointX="8.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.DANHMUC" Width="1.5" PointX="3.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.GIAMGIA" Width="1.5" PointX="3" PointY="7.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.HOADON" Width="1.5" PointX="9" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.LOAIKH" Width="1.5" PointX="4.5" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.LOAISP" Width="1.5" PointX="0.75" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.NHACUNGCAP" Width="1.5" PointX="3.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.SANPHAM" Width="1.5" PointX="6" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.SUKIEN" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.TAIKHOAN" Width="1.5" PointX="6.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="QL_BANHANGModel.THUONGHIEU" Width="1.5" PointX="3.75" PointY="14.625" IsExpanded="true" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_SP_ASP" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_SK_ASK" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_HD_CTHD" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_SP_CTHD" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_CTSP_SP" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_DM_SP" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_LSP_GG" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_SK_GG" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_KH_HD" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_LKH_KH" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_LSP_SP" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_NCC_SP" ManuallyRouted="false" />
+        <AssociationConnector Association="QL_BANHANGModel.FK_TH_SP" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
