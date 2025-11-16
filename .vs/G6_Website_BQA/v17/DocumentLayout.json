@@ -7,67 +7,324 @@
       "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\shared\\_layoutuser.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|D:\\CNPM\\G6_Website_BQA\\g6_website_bqa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|D:\\CNPM\\G6_Website_BQA\\g6_website_bqa\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|D:\\CNPM\\G6_Website_BQA\\g6_website_bqa\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|D:\\CNPM\\G6_Website_BQA\\g6_website_bqa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\models\\db_banhang.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
-      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\models\\db_banhang.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identitymigration\\202511160556127_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identitymigration\\202511160556127_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identitymigration\\202511160754370_initidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identitymigration\\202511160754370_initidentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identitymigration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identitymigration\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identity\\appusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identity\\appusermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identity\\appuserstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identity\\appuserstore.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identity\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identity\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\identity\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\identity\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\views\\shared\\_layoutpagelogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\shared\\_layoutpagelogin.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\viewmodel\\regester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\viewmodel\\regester.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\viewmodel\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\viewmodel\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\views\\account\\regester.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\views\\account\\regester.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|d:\\cnpm\\g6_website_bqa\\g6_website_bqa\\models\\chitietsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\models\\chitietsp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|D:\\CNPM\\G6_Website_BQA\\g6_website_bqa\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{42AA1723-E7E1-45D6-BF75-C8EA0F1B4AD6}|G6_Website_BQA\\G6_Website_BQA.csproj|solutionrelative:g6_website_bqa\\content\\css\\style.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 139,
+      "VerticalTabListWidth": 225,
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 20,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CHITIETSP.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Models\\CHITIETSP.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Models\\CHITIETSP.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Models\\CHITIETSP.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Models\\CHITIETSP.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T04:43:59.955Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "HOADON.cs",
-              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Models\\HOADON.cs",
-              "RelativeDocumentMoniker": "G6_Website_BQA\\Models\\HOADON.cs",
-              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Models\\HOADON.cs",
-              "RelativeToolTip": "G6_Website_BQA\\Models\\HOADON.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAxwBQAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "AppUserManager.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppUserManager.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Identity\\AppUserManager.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppUserManager.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Identity\\AppUserManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T06:32:05.303Z",
+              "WhenOpened": "2025-11-16T09:03:38.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "AppUserStore.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppUserStore.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Identity\\AppUserStore.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppUserStore.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Identity\\AppUserStore.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T09:03:37.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\IdentityMigration\\Configuration.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\IdentityMigration\\Configuration.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\IdentityMigration\\Configuration.cs",
+              "RelativeToolTip": "G6_Website_BQA\\IdentityMigration\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T08:50:50.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProFile.cshtml",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Home\\ProFile.cshtml",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Views\\Home\\ProFile.cshtml",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Home\\ProFile.cshtml",
+              "RelativeToolTip": "G6_Website_BQA\\Views\\Home\\ProFile.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T08:38:36.01Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Views\\Account\\Login.cshtml",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Account\\Login.cshtml",
+              "RelativeToolTip": "G6_Website_BQA\\Views\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T08:10:20.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\ViewModel\\Login.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\ViewModel\\Login.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\ViewModel\\Login.cs",
+              "RelativeToolTip": "G6_Website_BQA\\ViewModel\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T08:06:25.894Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "202511160754370_InitIdentity.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\IdentityMigration\\202511160754370_InitIdentity.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\IdentityMigration\\202511160754370_InitIdentity.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\IdentityMigration\\202511160754370_InitIdentity.cs",
+              "RelativeToolTip": "G6_Website_BQA\\IdentityMigration\\202511160754370_InitIdentity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T07:54:41.791Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Identity\\AppDBContext.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppDBContext.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Identity\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T07:53:32.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppUser.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Identity\\AppUser.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Identity\\AppUser.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Identity\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T07:48:10.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "DB_BanHang.edmx [Diagram1]",
-              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Models\\DB_BanHang.edmx",
-              "RelativeDocumentMoniker": "G6_Website_BQA\\Models\\DB_BanHang.edmx",
-              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Models\\DB_BanHang.edmx [Diagram1]",
-              "RelativeToolTip": "G6_Website_BQA\\Models\\DB_BanHang.edmx [Diagram1]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
-              "WhenOpened": "2025-11-15T06:31:18.744Z",
-              "EditorCaption": " [Diagram1]"
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Startup.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Startup.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Startup.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Startup.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T07:48:05.292Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 17,
+              "Title": "Regester.cshtml",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Account\\Regester.cshtml",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Views\\Account\\Regester.cshtml",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Account\\Regester.cshtml",
+              "RelativeToolTip": "G6_Website_BQA\\Views\\Account\\Regester.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T06:36:05.862Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "_LayoutPageLogin.cshtml",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Shared\\_LayoutPageLogin.cshtml",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Views\\Shared\\_LayoutPageLogin.cshtml",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Shared\\_LayoutPageLogin.cshtml",
+              "RelativeToolTip": "G6_Website_BQA\\Views\\Shared\\_LayoutPageLogin.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-16T06:31:33.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Controllers\\AccountController.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "G6_Website_BQA\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAA8wEYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T06:30:06.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Regester.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\ViewModel\\Regester.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\ViewModel\\Regester.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\ViewModel\\Regester.cs",
+              "RelativeToolTip": "G6_Website_BQA\\ViewModel\\Regester.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T06:18:56.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "202511160556127_init.cs",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\IdentityMigration\\202511160556127_init.cs",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\IdentityMigration\\202511160556127_init.cs",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\IdentityMigration\\202511160556127_init.cs",
+              "RelativeToolTip": "G6_Website_BQA\\IdentityMigration\\202511160556127_init.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T05:56:17.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Web.config",
+              "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Web.config",
+              "RelativeDocumentMoniker": "G6_Website_BQA\\Web.config",
+              "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Web.config",
+              "RelativeToolTip": "G6_Website_BQA\\Web.config",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC4AAACQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2025-11-16T03:47:07.217Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Style.css",
               "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Content\\Css\\Style.css",
               "RelativeDocumentMoniker": "G6_Website_BQA\\Content\\Css\\Style.css",
@@ -80,13 +337,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "G6_Website_BQA\\Views\\Home\\Index.cshtml",
               "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "G6_Website_BQA\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAIkAAAAAAAAAAAAowKMAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAIkAAAAAAAAAAAAowKIAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-22T07:56:01.044Z",
               "EditorCaption": ""
@@ -99,20 +356,20 @@
               "RelativeDocumentMoniker": "G6_Website_BQA\\Views\\Shared\\_LayoutUser.cshtml",
               "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Views\\Shared\\_LayoutUser.cshtml",
               "RelativeToolTip": "G6_Website_BQA\\Views\\Shared\\_LayoutUser.cshtml",
-              "ViewState": "AgIAADwAAAAAAAAAAAAAADQAAABOAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-10-21T16:21:54.802Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "G6_Website_BQA\\Controllers\\HomeController.cs",
               "ToolTip": "D:\\CNPM\\G6_Website_BQA\\G6_Website_BQA\\Controllers\\HomeController.cs",
               "RelativeToolTip": "G6_Website_BQA\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAdAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-21T16:21:16.895Z",
               "EditorCaption": ""

@@ -50,7 +50,37 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.5.1\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.4\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.4\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Owin, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Owin.2.2.4\lib\net45\Microsoft.AspNet.Identity.Owin.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin, Version=4.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.4.2.3\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb, Version=4.2.3.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.4.2.3\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.3.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.Cookies, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.Cookies.3.0.1\lib\net45\Microsoft.Owin.Security.Cookies.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security.OAuth, Version=3.0.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Owin.Security.OAuth.3.0.1\lib\net45\Microsoft.Owin.Security.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin, Version=1.0.0.0, Culture=neutral, PublicKeyToken=f0ebd12fd5e55cc5, processorArchitecture=MSIL">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
@@ -115,88 +145,66 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Css\Style.css" />
     <Content Include="Global.asax" />
-    <Content Include="Models\DB_BanHang.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB_BanHang.edmx</DependentUpon>
-      <LastGenOutput>DB_BanHang.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Models\DB_BanHang.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>DB_BanHang.edmx</DependentUpon>
-      <LastGenOutput>DB_BanHang.cs</LastGenOutput>
-    </Content>
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
     <Content Include="Scripts\bootstrap.esm.min.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Scripts\jquery-3.7.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.7.1.js" />
+    <Content Include="Scripts\jquery-3.7.1.min.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.js" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\ANHSANPHAM.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
+    <Compile Include="IdentityMigration\202511160556127_init.cs" />
+    <Compile Include="IdentityMigration\202511160556127_init.Designer.cs">
+      <DependentUpon>202511160556127_init.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\ANHSUKIEN.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
+    <Compile Include="IdentityMigration\202511160754370_InitIdentity.cs" />
+    <Compile Include="IdentityMigration\202511160754370_InitIdentity.Designer.cs">
+      <DependentUpon>202511160754370_InitIdentity.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\CHITIETHD.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
+    <Compile Include="IdentityMigration\Configuration.cs" />
+    <Compile Include="Identity\AppDBContext.cs" />
+    <Compile Include="Identity\AppUser.cs" />
+    <Compile Include="Identity\AppUserManager.cs" />
+    <Compile Include="Identity\AppUserStore.cs" />
+    <Compile Include="Migrations\202511160541309_InitialCreate.cs" />
+    <Compile Include="Migrations\202511160541309_InitialCreate.Designer.cs">
+      <DependentUpon>202511160541309_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Models\CHITIETSP.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DANHMUC.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DB_BanHang.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_BanHang.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DB_BanHang.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\DB_BanHang.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>DB_BanHang.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Models\GIAMGIA.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\HOADON.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LOAIKH.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\LOAISP.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\NHACUNGCAP.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SANPHAM.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\SUKIEN.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\TAIKHOAN.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Models\THUONGHIEU.cs">
-      <DependentUpon>DB_BanHang.tt</DependentUpon>
-    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Models\ANHSANPHAM.cs" />
+    <Compile Include="Models\ANHSUKIEN.cs" />
+    <Compile Include="Models\CHITIETHD.cs" />
+    <Compile Include="Models\CHITIETSP.cs" />
+    <Compile Include="Models\DANHMUC.cs" />
+    <Compile Include="Models\DBContext.cs" />
+    <Compile Include="Models\GIAMGIA.cs" />
+    <Compile Include="Models\HOADON.cs" />
+    <Compile Include="Models\LOAISP.cs" />
+    <Compile Include="Models\NHACUNGCAP.cs" />
+    <Compile Include="Models\SANPHAM.cs" />
+    <Compile Include="Models\SUKIEN.cs" />
+    <Compile Include="Models\THUONGHIEU.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Startup.cs" />
+    <Compile Include="ViewModel\Login.cs" />
+    <Compile Include="ViewModel\Regester.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
@@ -216,13 +224,6 @@
     <Content Include="Content\bootstrap-grid.rtl.css.map" />
     <Content Include="Content\bootstrap-grid.min.css.map" />
     <Content Include="Content\bootstrap-grid.css.map" />
-    <EntityDeploy Include="Models\DB_BanHang.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>DB_BanHang.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\DB_BanHang.edmx.diagram">
-      <DependentUpon>DB_BanHang.edmx</DependentUpon>
-    </Content>
     <None Include="packages.config" />
     <Content Include="Views\Shared\_LayoutUser.cshtml" />
     <Content Include="Scripts\bootstrap.min.js.map" />
@@ -232,6 +233,12 @@
     <Content Include="Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Scripts\bootstrap.bundle.js.map" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\_LayoutPageLogin.cshtml" />
+    <Content Include="Views\Account\Regester.cshtml" />
+    <Content Include="Scripts\jquery-3.7.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.7.1.min.map" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Home\ProFile.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -244,6 +251,17 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="IdentityMigration\202511160556127_init.resx">
+      <DependentUpon>202511160556127_init.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IdentityMigration\202511160754370_InitIdentity.resx">
+      <DependentUpon>202511160754370_InitIdentity.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202511160541309_InitialCreate.resx">
+      <DependentUpon>202511160541309_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
