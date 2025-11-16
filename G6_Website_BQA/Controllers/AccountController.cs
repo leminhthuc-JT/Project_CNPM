@@ -39,7 +39,7 @@ namespace G6_Website_BQA.Controllers
                 {
                     userManager.AddToRole(user.Id, "Customer");
                 }
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Login", "Account");
 
             }
             else { return View(); }
@@ -62,7 +62,14 @@ namespace G6_Website_BQA.Controllers
                     var authManager = HttpContext.GetOwinContext().Authentication;
                     var userIdentity = userManager.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
                     authManager.SignIn(new Microsoft.Owin.Security.AuthenticationProperties() { IsPersistent = false }, userIdentity);
-                    return RedirectToAction("Index", "Home");
+                    if(userManager.IsInRole(user.Id, "Admin"))
+                    {
+                        return RedirectToAction("Index", "Home", new { area = "Admin" });
+                    }
+                    else
+                    {
+                        return RedirectToAction("Index", "Home");
+                    }
                 }
                 else
                 {

@@ -69,3 +69,12 @@
     height: 40px;
     border-radius: 20px;
 }
+
+.btn-nav{
+    transition: 0.4s ease;
+    font-weight: 500;
+}
+
+.btn-nav:hover{
+    transform: scale(1.05);
+}
