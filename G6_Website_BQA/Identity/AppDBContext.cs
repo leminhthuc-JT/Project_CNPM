@@ -11,5 +11,9 @@ namespace G6_Website_BQA.Identity
         public AppDBContext() : base("MyConnectionString")
         {
         }
+        public static AppDBContext Create()
+        {
+            return new AppDBContext();
+        }
     }
 }

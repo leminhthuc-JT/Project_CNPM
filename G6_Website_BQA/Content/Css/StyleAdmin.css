@@ -1,0 +1,60 @@
+﻿/* Margin-top đủ để không bị che bởi navbar fixed */
+.mt-navbar {
+    margin-top: 90px; /* > navbar height (70px logo + padding) */
+}
+
+/* Container nút responsive */
+.responsive-btn-group {
+    width: 100%;
+    max-width: 600px; /* optional */
+    margin: 0 auto;
+    flex-wrap: nowrap; /* không xuống dòng */
+    gap: 10px;
+}
+
+/* Các nút */
+.btn-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 5px;
+}
+
+/* Hover/active nút */
+.btn-hover {
+    width: 150px;
+    height: 45px;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 0 3px 0 grey, 0 6px 10px rgba(0,0,0,0.2);
+    transition: 0.2s ease, transform 0.1s ease;
+}
+
+.btn-hover:active {
+    transform: translateY(3px);
+    box-shadow: 0 1px 0 grey;
+}
+
+.btn-hover:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* Responsive khi ≤430px */
+@media (max-width: 430px) {
+    .btn-center {
+        height: 50px;
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .responsive-btn-group {
+        justify-content: space-around; /* cách đều các icon */
+    }
+
+    .btn-center i {
+        margin: 0;
+    }
+}
