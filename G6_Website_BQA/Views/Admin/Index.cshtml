@@ -1,33 +1,9 @@
-﻿@model IEnumerable<G6_Website_BQA.Identity.AppUser>
-
+﻿
 @{
     ViewBag.Title = "Index";
     Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
 }
 
-<h2>Danh sách tài khoản</h2>
+<h2>Index</h2>
 
-<p>
-    @Html.ActionLink("Thêm tài khoản", "Create")
-</p>
 
-<table class="table table-bordered">
-    <tr>
-        <th>UserName</th>
-        <th>Email</th>
-        <th>Họ tên</th>
-        <th>Thao tác</th>
-    </tr>
-
-    @foreach (var item in Model)
-    {
-        <tr>
-            <td>@item.UserName</td>
-            <td>@item.Email</td>
-            <td>@item.HoTen</td>
-            <td>
-                @Html.ActionLink("Xóa", "Delete", new { id = item.Id })
-            </td>
-        </tr>
-    }
-</table>

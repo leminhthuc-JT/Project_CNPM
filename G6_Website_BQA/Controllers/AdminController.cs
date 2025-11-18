@@ -22,6 +22,11 @@ namespace G6_Website_BQA.Controllers
         // GET: Admin
         public ActionResult Index()
         {
+            return View();
+        }
+
+        public ActionResult AccountManage()
+        {
             var users = userManager.Users.ToList();
             return View(users);
         }
