@@ -1,0 +1,88 @@
+﻿@model G6_Website_BQA.ViewModel.CreateAccountViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container my-4">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+
+            <div class="card shadow-sm">
+                <div class="card-header bg-dark text-white">
+                    <h4 class="mb-0">Tạo tài khoản mới</h4>
+                </div>
+                <div class="card-body">
+                    @using (Html.BeginForm("Create", "Admin", FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.UserName, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", placeholder = "Nhập tên đăng nhập" })
+                            @Html.ValidationMessageFor(m => m.UserName, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.HoTen, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.HoTen, new { @class = "form-control", placeholder = "Nhập họ tên" })
+                            @Html.ValidationMessageFor(m => m.HoTen, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Nhập email" })
+                            @Html.ValidationMessageFor(m => m.Email, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Password, new { @class = "form-label" })
+                            @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Nhập mật khẩu" })
+                            @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.ConfirmPassword, new { @class = "form-label" })
+                            @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", placeholder = "Nhập lại mật khẩu" })
+                            @Html.ValidationMessageFor(m => m.ConfirmPassword, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="mb-3">
+                            @Html.LabelFor(m => m.Role, new { @class = "form-label" })
+                            @Html.DropDownListFor(
+                                m => m.Role,
+                                new SelectList(
+                                    new[]
+                                    {
+                                        new { Value = "",        Text = "-- Chọn quyền --" },
+                                        new { Value = "Admin",   Text = "Admin" },
+                                        new { Value = "Customer",Text = "Customer" }
+                                    },
+                                    "Value",
+                                    "Text"
+                                ),
+                                new { @class = "form-select" }
+                            )
+                            @Html.ValidationMessageFor(m => m.Role, "", new { @class = "text-danger" })
+                        </div>
+
+                        <div class="d-flex justify-content-between">
+                            <a href="@Url.Action("AccountManage", "Admin")" class="btn btn-secondary">
+                                <i class="fa fa-arrow-left"></i> Quay lại
+                            </a>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fa fa-save"></i> Lưu
+                            </button>
+                        </div>
+                    }
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+

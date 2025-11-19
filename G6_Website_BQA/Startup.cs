@@ -1,10 +1,11 @@
-﻿using Microsoft.Owin;
-using Owin;
-using System;
+﻿using System;
 using System.Threading.Tasks;
+using G6_Website_BQA.Identity;
 using Microsoft.AspNet.Identity;
-using Microsoft.Owin.Security.Cookies;
 using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.Owin;
+using Microsoft.Owin.Security.Cookies;
+using Owin;
 
 [assembly: OwinStartup(typeof(G6_Website_BQA.Startup))]
 
@@ -14,6 +15,10 @@ namespace G6_Website_BQA
     {
         public void Configuration(IAppBuilder app)
         {
+            // Đăng ký AppDBContext và AppUserManager cho mỗi request
+            app.CreatePerOwinContext(AppDBContext.Create);
+            app.CreatePerOwinContext<AppUserManager>(AppUserManager.Create);
+
             app.UseCookieAuthentication(new CookieAuthenticationOptions
             {
                 AuthenticationType = DefaultAuthenticationTypes.ApplicationCookie,
