@@ -6,9 +6,9 @@ using System.Web.Mvc;
 
 namespace G6_Website_BQA.Areas.Admin.Controllers
 {
-    public class ProductsController : Controller
+    public class ProductsManageController : Controller
     {
-        // GET: Admin/Products
+        // GET: Admin/ProductsManage
         public ActionResult Index()
         {
             return View();
