@@ -144,6 +144,7 @@
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Css\Style.css" />
+    <Content Include="Content\Css\StyleAdmin.css" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -188,9 +189,9 @@
     <Compile Include="IdentityMigration\202511160754370_InitIdentity.Designer.cs">
       <DependentUpon>202511160754370_InitIdentity.cs</DependentUpon>
     </Compile>
-    <Compile Include="IdentityMigration\202511191412387_UpdateIdentityModel.cs" />
-    <Compile Include="IdentityMigration\202511191412387_UpdateIdentityModel.Designer.cs">
-      <DependentUpon>202511191412387_UpdateIdentityModel.cs</DependentUpon>
+    <Compile Include="IdentityMigration\202511200642422_UpdateIdentityModel.cs" />
+    <Compile Include="IdentityMigration\202511200642422_UpdateIdentityModel.Designer.cs">
+      <DependentUpon>202511200642422_UpdateIdentityModel.cs</DependentUpon>
     </Compile>
     <Compile Include="IdentityMigration\Configuration.cs" />
     <Compile Include="Identity\AppDBContext.cs" />
@@ -278,8 +279,8 @@
     <EmbeddedResource Include="IdentityMigration\202511160754370_InitIdentity.resx">
       <DependentUpon>202511160754370_InitIdentity.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IdentityMigration\202511191412387_UpdateIdentityModel.resx">
-      <DependentUpon>202511191412387_UpdateIdentityModel.cs</DependentUpon>
+    <EmbeddedResource Include="IdentityMigration\202511200642422_UpdateIdentityModel.resx">
+      <DependentUpon>202511200642422_UpdateIdentityModel.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202511160541309_InitialCreate.resx">
       <DependentUpon>202511160541309_InitialCreate.cs</DependentUpon>
