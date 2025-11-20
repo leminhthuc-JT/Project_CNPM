@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.AspNet.Identity.EntityFramework;
+using G6_Website_BQA.Identity;
 
 [assembly: OwinStartup(typeof(G6_Website_BQA.Startup))]
 
@@ -20,6 +21,10 @@ namespace G6_Website_BQA
                 LoginPath = new PathString("/Account/Login"),
             });
             this.CreateRolesAndUser();
+
+            // Đăng ký AppDBContext và AppUserManager cho mỗi request
+            app.CreatePerOwinContext(AppDBContext.Create);
+            app.CreatePerOwinContext<AppUserManager>(AppUserManager.Create);
         }
         public void CreateRolesAndUser()
         {

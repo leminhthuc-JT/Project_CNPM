@@ -9,5 +9,6 @@ namespace G6_Website_BQA.Identity
     public class AppUser: IdentityUser
     {
         public string Address { get; set; }
+        public string HoTen { get; set; }
     }
 }

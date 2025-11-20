@@ -8,8 +8,11 @@ namespace G6_Website_BQA.Identity
 {
     public class AppDBContext:IdentityDbContext<AppUser>
     {
-        public AppDBContext() : base("MyConnectionString")
+        public AppDBContext() : base("MyConnectionString") { }
+
+        public static AppDBContext Create()
         {
+            return new AppDBContext();
         }
     }
 }
