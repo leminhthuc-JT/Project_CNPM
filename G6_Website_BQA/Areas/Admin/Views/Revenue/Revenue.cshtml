@@ -1,0 +1,176 @@
+﻿@model G6_Website_BQA.ViewModel.RevenueSummaryViewModel
+@using Newtonsoft.Json
+@{
+    ViewBag.Title = "Revenue - Admin";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container my-4">
+    <!-- Filter Form -->
+    <div class="row my-3">
+        <div class="col-md-3">
+            <div class="form-group">
+                @Html.LabelFor(m => m.FromDate, "From", new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.FromDate, new { @class = "form-control form-control-sm", type = "date" })
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+                @Html.LabelFor(m => m.ToDate, "To", new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.ToDate, new { @class = "form-control form-control-sm", type = "date" })
+            </div>
+        </div>
+
+        <div class="col-md-2 d-flex align-items-end">
+            <button type="submit" class="btn btn-primary btn-sm w-100">
+                <i class="fa fa-filter"></i> Lọc
+            </button>
+        </div>
+    </div>
+
+    <div class="row my-4">
+        <!-- Revenue Summary Cards -->
+        <div class="col-md-3">
+            <div class="card bg-info text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Tổng doanh thu</h5>
+                    <p class="card-text">@Model.TotalRevenue.ToString("C")</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-success text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Tổng đơn đặt hàng</h5>
+                    <p class="card-text">@Model.TotalOrders</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-danger text-white">
+                <div class="card-body">
+                    <h5 class="card-title">Đơn đã bị hủy</h5>
+                    <p class="card-text">@Model.CanceledOrders</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card bg-warning text-dark">
+                <div class="card-body">
+                    <h5 class="card-title">Trung bình giá trị đơn hàng</h5>
+                    <p class="card-text">@Model.AverageOrderValue.ToString("C")</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Revenue by Date Chart -->
+    <div class="row">
+        <div class="col-md-12">
+            <h4>Doanh thu theo ngày</h4>
+            <canvas id="revenueChart" width="400" height="150"></canvas>
+        </div>
+    </div>
+
+    <!-- Top Products -->
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h4>Sản phẩm bán chạy</h4>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Tên sản phẩm</th>
+                        <th>Số lượng đã bán</th>
+                        <th>Doanh thu</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.TopProducts != null && Model.TopProducts.Any())
+                    {
+                        foreach (var item in Model.TopProducts)
+                        {
+                            <tr>
+                                <td>@item.TENSP</td>
+                                <td>@item.Quantity</td>
+                                <td>@item.Revenue.ToString("C")</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td colspan="3">Không có sản phẩm nào.</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Order Details -->
+    <div class="row my-4">
+        <div class="col-md-12">
+            <h4>Chi tiết đơn đặt hàng</h4>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mã đơn</th>
+                        <th>Ngày đặt</th>
+                        <th>Khách hàng</th>
+                        <th>Tổng tiền</th>
+                        <th>Trạng thái</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Orders != null && Model.Orders.Any())
+                    {
+                        foreach (var item in Model.Orders)
+                        {
+                            <tr>
+                                <td>@item.MAHD</td>
+                                <td>@item.NGAYLAP.ToString("dd/MM/yyyy")</td>
+                                <td>@item.CustomerName</td>
+                                <td>@item.TONGTIEN.ToString("C")</td>
+                                <td>@item.TRANGTHAI</td>
+                            </tr>
+                        }
+                    }
+                    else
+                    {
+                        <tr><td colspan="5">Không có đơn đặt hàng nào.</td></tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- Chart.js Script -->
+<script>
+    var ctx = document.getElementById('revenueChart').getContext('2d');
+    var revenueChart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: @Html.Raw(JsonConvert.SerializeObject(Model.RevenueByDates.Select(x => x.Date.ToString("dd/MM/yyyy")).ToArray())),
+            datasets: [{
+                label: 'Revenue',
+                data: @Html.Raw(JsonConvert.SerializeObject(Model.RevenueByDates.Select(x => x.Total).ToArray())),
+                borderColor: 'rgb(75, 192, 192)',
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                fill: true,
+            }]
+        },
+        options: {
+            responsive: true,
+            maintainAspectRatio: false,
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+</script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
