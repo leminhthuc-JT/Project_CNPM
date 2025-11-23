@@ -10,5 +10,6 @@ namespace G6_Website_BQA.Identity
     {
         public string Address { get; set; }
         public string HoTen { get; set; }
+        public string Role { get; set; }
     }
 }

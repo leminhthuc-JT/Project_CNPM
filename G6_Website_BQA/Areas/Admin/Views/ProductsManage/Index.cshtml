@@ -1,0 +1,53 @@
+﻿@model IEnumerable<G6_Website_BQA.Models.SANPHAM>
+@{
+    ViewBag.Title = "Quản lý sản phẩm";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<div class="mb-3">
+    <a href="@Url.Action("Create")" class="btn btn-success">+ Thêm sản phẩm</a>
+</div>
+
+<form method="get" class="mb-3">
+    <label>Lọc hàng:</label>
+    <select name="stockFilter" onchange="this.form.submit()" class="form-control" style="width:200px;">
+        <option value="all" @(ViewBag.StockFilter == "all" ? "selected" : "")>Tất cả</option>
+        <option value="in" @(ViewBag.StockFilter == "in" ? "selected" : "")>Còn hàng</option>
+        <option value="out" @(ViewBag.StockFilter == "out" ? "selected" : "")>Hết hàng</option>
+    </select>
+</form>
+
+<table class="table table-bordered table-hover">
+    <thead>
+        <tr>
+            <th>Mã SP</th>
+            <th>Tên sản phẩm</th>
+            <th>Số lượng</th>
+            <th>Mô tả</th>
+            <th style="width:150px;">Thao tác</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.MASP</td>
+                <td>@item.TENSP</td>
+                <td>@item.SOLUONG</td>
+                <td>@item.MOTA</td>
+                <td>
+                    <a href="@Url.Action("Edit", new { id = item.MASP })" class="btn btn-primary btn-sm">Sửa</a>
+
+                    @using (Html.BeginForm("Delete", "ProductsManage", new { id = item.MASP }, FormMethod.Post))
+                    {
+                        @Html.AntiForgeryToken()
+                        <button class="btn btn-danger btn-sm" onclick="return confirm('Xóa sản phẩm này?')">Xóa</button>
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

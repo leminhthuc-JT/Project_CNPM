@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+<div class="container my-4">
+    <h2>Tạo tài khoản mới</h2>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success">
+            @TempData["Success"]
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger">
+            @TempData["Error"]
+        </div>
+    }
+
+    @using (Html.BeginForm("Create", "Account", FormMethod.Post))
+    {
+        @Html.AntiForgeryToken()
+
+        <!-- Tên đăng nhập -->
+        <div class="mb-3">
+            <label for="userName" class="form-label">Tên đăng nhập</label>
+            <input type="text" name="userName" class="form-control" placeholder="Tên đăng nhập" />
+        </div>
+
+        <!-- Email -->
+        <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input type="text" name="email" class="form-control" placeholder="Email" />
+        </div>
+
+        <!-- Họ tên -->
+        <div class="mb-3">
+            <label for="hoTen" class="form-label">Họ tên</label>
+            <input type="text" name="hoTen" class="form-control" placeholder="Họ tên" />
+        </div>
+
+        <!-- Mật khẩu -->
+        <div class="mb-3">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input type="password" name="password" class="form-control" placeholder="Mật khẩu" />
+        </div>
+
+        <!-- Chọn quyền -->
+        <div class="mb-3">
+            <label for="role" class="form-label">Quyền</label>
+            @Html.DropDownList("role", (SelectList)ViewBag.Roles, "-- Chọn quyền --", new { @class = "form-control" })
+        </div>
+
+        <button type="submit" class="btn btn-primary">Tạo tài khoản</button>
+    }
+</div>

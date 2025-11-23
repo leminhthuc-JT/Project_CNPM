@@ -1,16 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Web;
+using System.Web.Configuration;
 using System.Web.Mvc;
+using G6_Website_BQA.Identity;
 using G6_Website_BQA.Models;
-using G6_Website_BQA.ViewModel;
-using System.Data.Entity;
 
 namespace G6_Website_BQA.Areas.Admin.Controllers
 {
     public class RevenueController : Controller
     {
+        private DBContext _dbContext;
+        public RevenueController()
+        {
+            _dbContext = new DBContext();
+        }
         // GET: Admin/Revenue
         public ActionResult Index()
         {
@@ -19,46 +25,61 @@ namespace G6_Website_BQA.Areas.Admin.Controllers
 
         public ActionResult Revenue(DateTime? fromDate, DateTime? toDate)
         {
-            using (var db = new DBContext())
-            {
-                var query = db.HOADONs.AsQueryable();
+ 
+            var ordersQuery = _dbContext.HOADONs.AsQueryable();
 
-                if (fromDate.HasValue)
-                    query = query.Where(h => h.NGAYLAP >= fromDate);
+            if (fromDate.HasValue)
+                ordersQuery = ordersQuery.Where(o => o.NGAYLAP >= fromDate);
 
-                if (toDate.HasValue)
-                    query = query.Where(h => h.NGAYLAP < toDate.Value.AddDays(1));
+            if (toDate.HasValue)
+                ordersQuery = ordersQuery.Where(o => o.NGAYLAP <= toDate);
 
-                query = query.Where(h => h.TRANGTHAI == "ĐÃ THANH TOÁN");
+            var ordersList = ordersQuery.ToList(); 
 
-                var model = new RevenueSummaryViewModel
+            var totalRevenue = ordersList.Sum(o => (decimal?)o.TONGTIEN) ?? 0m;
+            var totalOrders = ordersList.Count();
+            var canceledOrders = ordersList.Count(o => o.TRANGTHAI == "ĐÃ HỦY");
+
+            var revenueByDate = ordersList
+                 .Where(o => o.NGAYLAP.HasValue)
+                 .GroupBy(o => o.NGAYLAP.Value.Date)
+                 .Select(g => new
+                 {
+                     Date = g.Key,
+                     TotalRevenue = g.Sum(o => (decimal?)o.TONGTIEN) ?? 0m
+                 })
+                 .OrderBy(g => g.Date)
+                 .ToList();
+
+            var topProducts = _dbContext.CHITIETHDs
+                .Join(ordersQuery, c => c.MAHD, h => h.MAHD, (c, h) => new { c, h })
+                .GroupBy(x => x.c.MASP)
+                .Select(g => new
                 {
-                    FromDate = fromDate,
-                    ToDate = toDate,
-                    TotalRevenue = query.Sum(h => (decimal?)h.TONGTIEN) ?? 0,
-                    TotalOrders = query.Count(),
-                    CanceledOrders = db.HOADONs.Count(h => h.TRANGTHAI == "ĐÃ HỦY"),
-                };
+                    ProductId = g.Key,
+                    Quantity = g.Sum(x => x.c.SOLUONG),
+                    Revenue = g.Sum(x => x.c.SOLUONG * x.c.DONGIA)
+                })
+                .OrderByDescending(p => p.Revenue)
+                .Take(5)
+                .ToList();
+            var averageOrderValue = totalOrders > 0 ? totalRevenue / totalOrders : 0m;
 
-                model.AverageOrderValue = model.TotalOrders > 0
-                    ? model.TotalRevenue / model.TotalOrders
-                    : 0;
+            // Truyền dữ liệu vào ViewBag
+            ViewBag.AverageOrderValue = averageOrderValue;
+            ViewBag.TotalRevenue = totalRevenue;
+            ViewBag.TotalOrders = totalOrders;
+            ViewBag.CanceledOrders = canceledOrders;
+            ViewBag.RevenueByDate = revenueByDate;
+            ViewBag.TopProducts = topProducts;
 
-                model.RevenueByDates = query
-                    .GroupBy(h => DbFunctions.TruncateTime(h.NGAYLAP))
-                    .Select(g => new RevenueByDateItem
-                    {
-                        Date = g.Key.Value,
-                        Total = g.Sum(x => x.TONGTIEN)
-                    }).ToList();
+            // Truyền dữ liệu vào ViewBag cho chart
+            ViewBag.RevenueLabels = revenueByDate
+                .Select(r => r.Date.ToString("dd-MM"))
+                .ToList();
+            ViewBag.RevenueData = revenueByDate.Select(r => r.TotalRevenue).ToList();
 
-                model.RevenueByDates = query.GroupBy(h => DbFunctions.TruncateTime(h.NGAYLAP)).Select(g => new RevenueByDateItem
-                {
-                    Date = g.Key.Value,
-                    Total = g.Sum(x => x.TONGTIEN)
-                }).ToList();
-                return View(model);
-            }
+            return View();
         }
     }
 }

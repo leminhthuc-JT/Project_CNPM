@@ -1,0 +1,86 @@
+﻿@model IEnumerable<G6_Website_BQA.Identity.AppUser>
+
+@{
+    ViewBag.Title = "AccountManage";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<div class="container my-4">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mb-0">Quản lý tài khoản</h2>
+        <a href="@Url.Action("Create", "Account")" class="btn btn-success">
+            <i class="fa fa-plus me-1"></i> Tạo tài khoản mới
+        </a>
+    </div>
+
+    @if (TempData["Success"] != null)
+    {
+        <div class="alert alert-success alert-dismissible fade show" role="alert">
+            @TempData["Success"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    @if (TempData["Error"] != null)
+    {
+        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+            @TempData["Error"]
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+    }
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-hover align-middle mb-0">
+                    <thead class="table-dark">
+                        <tr>
+                            <th style="width:50px;">#</th>
+                            <th>Tên đăng nhập</th>
+                            <th>Họ tên</th>
+                            <th>Email</th>
+                            <th>Quyền</th>
+                            <th class="text-center" style="width:120px;">Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @if (Model == null || !Model.Any())
+                        {
+                            <tr>
+                                <td colspan="6" class="text-center text-muted py-4">
+                                    Không có tài khoản nào.
+                                </td>
+                            </tr>
+                        }
+                        else
+                        {
+                            var index = 1;
+                            foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@index</td>
+                                    <td>@item.UserName</td>
+                                    <td>@item.HoTen</td>
+                                    <td>@item.Email</td>
+                                    <td>
+                                        <span class="badge bg-primary">@item.Role</span>
+                                    </td>
+                                    <td class="text-center">
+                                        @using (Html.BeginForm("Delete", "Account", new { id = item.Id }, FormMethod.Post, new { onsubmit = "return confirm('Bạn có chắc muốn xóa tài khoản này không?');" }))
+                                        {
+                                            @Html.AntiForgeryToken()
+                                            <button type="submit" class="btn btn-sm btn-outline-danger">
+                                                <i class="fa fa-trash"></i> Xóa
+                                            </button>
+                                        }
+                                    </td>
+                                </tr>
+                                index++;
+                            }
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
