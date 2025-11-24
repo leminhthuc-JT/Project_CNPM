@@ -1,0 +1,54 @@
+﻿@model G6_Website_BQA.Models.SANPHAM
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chỉnh sửa sản phẩm</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    @Html.HiddenFor(m => m.MASP)
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TENSP)
+        @Html.TextBoxFor(m => m.TENSP, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TENSP)
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SOLUONG)
+        @Html.TextBoxFor(m => m.SOLUONG, new { @class = "form-control", type = "number" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MOTA)
+        @Html.TextAreaFor(m => m.MOTA, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Loại sản phẩm")
+        @Html.DropDownList("MALOAISP", null, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Danh mục")
+        @Html.DropDownList("MADM", null, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Thương hiệu")
+        @Html.DropDownList("MATH", null, new { @class = "form-control" })
+    </div>
+
+    <div class="form-group">
+        @Html.Label("Nhà cung cấp")
+        @Html.DropDownList("MANCC", null, new { @class = "form-control" })
+    </div>
+
+    <button type="submit" class="btn btn-primary">Cập nhật</button>
+    <a href="@Url.Action("Index")" class="btn btn-secondary">Hủy</a>
+}
+

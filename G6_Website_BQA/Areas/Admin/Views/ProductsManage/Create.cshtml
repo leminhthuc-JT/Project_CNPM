@@ -1,0 +1,79 @@
+﻿@model G6_Website_BQA.Models.SANPHAM
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Areas/Admin/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Thêm sản phẩm</h2>
+
+@using (Html.BeginForm("Create", "ProductsManage", FormMethod.Post, new { area = "Admin" }))
+{
+    @Html.AntiForgeryToken()
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.TENSP)
+        @Html.TextBoxFor(m => m.TENSP, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.TENSP, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.SOLUONG)
+        @Html.TextBoxFor(m => m.SOLUONG, new { @class = "form-control", type = "number" })
+        @Html.ValidationMessageFor(m => m.SOLUONG, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MOTA)
+        @Html.TextAreaFor(m => m.MOTA, new { @class = "form-control" })
+        @Html.ValidationMessageFor(m => m.MOTA, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MALOAISP, "Loại sản phẩm")
+        @Html.DropDownListFor(
+            m => m.MALOAISP,
+            (SelectList)ViewBag.MALOAISP,
+            "-- Chọn loại --",
+            new { @class = "form-control" }
+        )
+        @Html.ValidationMessageFor(m => m.MALOAISP, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MADM, "Danh mục")
+        @Html.DropDownListFor(
+            m => m.MADM,
+            (SelectList)ViewBag.MADM,
+            "-- Chọn danh mục --",
+            new { @class = "form-control" }
+        )
+        @Html.ValidationMessageFor(m => m.MADM, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MATH, "Thương hiệu")
+        @Html.DropDownListFor(
+            m => m.MATH,
+            (SelectList)ViewBag.MATH,
+            "-- Chọn thương hiệu --",
+            new { @class = "form-control" }
+        )
+        @Html.ValidationMessageFor(m => m.MATH, "", new { @class = "text-danger" })
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(m => m.MANCC, "Nhà cung cấp")
+        @Html.DropDownListFor(
+            m => m.MANCC,
+            (SelectList)ViewBag.MANCC,
+            "-- Chọn NCC --",
+            new { @class = "form-control" }
+        )
+        @Html.ValidationMessageFor(m => m.MANCC, "", new { @class = "text-danger" })
+    </div>
+
+    <button type="submit" class="btn btn-success">Lưu</button>
+    <a href="@Url.Action("Index", "ProductsManage", new { area = "Admin" })" class="btn btn-secondary">Hủy</a>
+}
